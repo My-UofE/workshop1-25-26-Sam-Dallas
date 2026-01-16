@@ -24,6 +24,8 @@ def process_guess(letter, board, word):
             board[char] = letter
             print('Well done!', letter, 'is in the word')
             found = True
+            return True
     if found == False:
         print('Sorry, ', letter, ' is not in the word')
+        return False
         
